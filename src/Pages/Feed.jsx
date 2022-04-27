@@ -1,12 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "../Style/FeedStyle.css";
+import Post from "../components/Post";
+
 const Feed = () => {
+    const [modalActive, setModalActive] = useState(true)
     return (
-        <div className="Feed-with">
-            <div className="wer">
-                gdgfdgd
-            </div>
-        </div>
+        <Post active={modalActive} setActive={setModalActive}/>
     );
 };
 
