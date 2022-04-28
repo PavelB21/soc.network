@@ -1,6 +1,8 @@
 import React from 'react';
 import  '../Style/LoginStyle.css';
-const LoginForm = () => {
+class LoginForm extends React.Component {
+    render(){
+        const {onButtonClick} = this.props;
     return (
         <div className="login-wr">
             <h2>Авторизация</h2>
@@ -8,11 +10,11 @@ const LoginForm = () => {
                 <form>
                     <input type="email" placeholder="Пользователь"/>
                     <input type="password" placeholder="Пароль"/>
-                    <button onClick="window.location.assign('/Profile/Profile')">Вход</button>
+                    <button onClick={onButtonClick}>Вход</button>
                 </form>
             </div>
         </div>
     );
-};
-
+}
+}
 export default LoginForm;
