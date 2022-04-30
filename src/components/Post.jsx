@@ -1,15 +1,15 @@
 import React from 'react';
 import '../Style/PostStyle.css';
-import '../Style/select.css';
 import {useState} from 'react';
 import Modal from '../Modal/modal';
 
 function Post(props) {
-    const [modalActive, setModalActive] = useState(false);
+    const [show, setShow] = useState(false)
     return (
         <div>
             <div className="post">
-                <div className="post_top" onClick={() => {setModalActive(true);}}>
+                <div className="post_top" onClick={() =>
+                    setShow(true)}>
                     <div className="post_topInfo" key={props.post.id}>
                         <h3>{props.post.username}</h3>
                     </div>
@@ -32,7 +32,7 @@ function Post(props) {
                     </div>
                 </div>
             </div>
-            <Modal active={modalActive} setActive={setModalActive}/>
+            <Modal onClise={() => setShow(false)} show={show}/>
         </div>
     );
 }

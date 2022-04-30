@@ -1,14 +1,16 @@
 import React from 'react';
 import './modal.css';
 
-
-function Modal ({active, setActive})  {
+const Modal = props => {
+    if (!props.show){
+        return null
+    }
     return(
-        <div className={active ? "modal active": "modal"}
-             onClick={() => setActive(false)}>
-            <div className={active ? "modal__content active": "modal__content"}
-                 onClick={event => event.stopPropagation()}>
-                текст модального окна
+        <div className="modal" onClick={props.onClose}>
+            <div className="modal-content" onClick={e => e.stopPropagation()}>
+                 <div className="close" onClick={props.onClose}>
+                    текс модального окна
+                 </div>
             </div>
         </div>
     )
