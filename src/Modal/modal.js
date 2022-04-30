@@ -1,15 +1,19 @@
 import React from 'react';
-//import './modal.css';
-import Post from "../components/Post";
+import './modal.css';
 
-function Modal ({closeModal})  {
-    return (
-        <div className="modalBackground">
-            <div className="modalContainer">
-                <button onClick={() => closeModal(false)}>X</button>
+
+function Modal ({active, setActive})  {
+    return(
+        <div className={active ? "modal active": "modal"}
+             onClick={() => setActive(false)}>
+            <div className={active ? "modal__content active": "modal__content"}
+                 onClick={event => event.stopPropagation()}>
+                текст модального окна
             </div>
         </div>
-)
+    )
+
+
 };
 
 export default Modal;

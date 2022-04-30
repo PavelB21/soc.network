@@ -17,6 +17,7 @@ class App extends React.Component {
   render() {
     return (
         <BrowserRouter>
+
           {this.state.isLoggedIn ? <Sidebar/> : <LoginForm onButtonClick = {this.handleLoginClick}/>}
           <Routes>
             <Route path="profile" element={<Profile/>}/>

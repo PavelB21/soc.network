@@ -1,11 +1,20 @@
 import React from 'react';
-import "../Style/FeedStyle.css";
 import Post from "../components/Post";
+import data from "../components/data/data.json";
 const Feed = () => {
-
     return (
-            <Post/>
+        <div>
+            {data.map(user => {
+                return (
+                    <Post post={user}/>
+                )
+            }
+            )
+            }
+            )
+        </div>
     )
+
 };
 
 export default Feed;
