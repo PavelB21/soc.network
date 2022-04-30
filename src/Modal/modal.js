@@ -9,7 +9,9 @@ const Modal = props => {
         <div className="modal" onClick={props.onClose}>
             <div className="modal-content" onClick={e => e.stopPropagation()}>
                  <div className="close" onClick={props.onClose}>
-                    текс модального окна
+                     <div className="modal=body">
+                         текс модального окна
+                     </div>
                  </div>
             </div>
         </div>

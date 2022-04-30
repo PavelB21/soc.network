@@ -32,7 +32,7 @@ function Post(props) {
                     </div>
                 </div>
             </div>
-            <Modal onClise={() => setShow(false)} show={show}/>
+            <Modal onClose={() => setShow(false)} show={show}/>
         </div>
     );
 }
