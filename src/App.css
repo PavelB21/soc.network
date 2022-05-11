@@ -1,4 +1,3 @@
-
 .App {
   text-align: center;
 }
@@ -22,7 +21,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #707070;
+  color: #888787;
 }
 
 .App-link {
@@ -38,5 +37,5 @@
   }
 }
 body{
-  background-color: #edeef0;
+    background-color: #edeef0;
 }

@@ -10,7 +10,7 @@ function Post(props) {
     return (
         <div>
             <div className="feed_row">
-                <div className="_post post page_block all own post--withPostBottomAction  post--with-likes closed_comments deep_active" key={props.post.id}>
+                <div className="_post post page_block all own post--withPostBottomAction  post--with-likes closed_comments deep_active" key={props.post.postId}>
                     <div className='_post_content'>
                         <div className='PostHeader PostHeader--legacy PostHeader--inPost js-PostHeader'>
                             <div className='PostHeaderInfo PostHeaderInfo--inHeader PostHeaderInfo--legacy'>
@@ -31,11 +31,11 @@ function Post(props) {
                                 <div className='like_wrap _like_wall68491943_1490 '>
                                     <div className='like_cont PostBottomActionLikeBtns PostBottomActionLikeBtns--withBgButtons'>
                                         <div className='like_btns'>
-    
+
                                         </div>
                                     </div>
                                 </div>
-                               <Comment/>
+                                <Comment/>
                                 <div className='reply_box_wrap'>
                                     <div className='reply_fakebox_container'>
                                         <div className='reply_fakebox'>
@@ -47,9 +47,9 @@ function Post(props) {
                                     </div>
                                 </div>
                             </div>
+                        </div>
                     </div>
                 </div>
-            </div>
             </div>
             <Modal onClose={() => setShow(false)} show={show} post={props.post}/>
         </div>

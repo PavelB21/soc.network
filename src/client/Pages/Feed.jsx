@@ -21,9 +21,9 @@ class Feed extends React.Component {
         return (
             <div>
                 {posts.map(user => {
-                        return (
-                            <Post post={user}/>
-                        )})}
+                    return (
+                        <Post post={user}/>
+                    )})}
             </div>
         )
     };

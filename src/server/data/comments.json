@@ -1,16 +1,19 @@
 [
   {
+    "postId": 1,
     "id": 1,
     "author": "Alex",
     "text": "est natus enim nihil est dolore omnis voluptatem numquam\\net omnis occaecati quod ullam at\\nvoluptatem error expedita pariatur\\nnihil sint nostrum voluptatem reiciendis et"
 
   },
   {
+    "postId": 2,
     "id": 2,
     "author": "Alex",
     "text": "laudantium enim quasi est quidem magnam voluptate ipsam eos\\ntempora quo necessitatibus\\ndolor quam autem quasi\\nreiciendis et nam sapiente accusantium"
   },
   {
+    "postId": 3,
     "id": 3,
     "author": "Pavel",
     "text": "quia molestiae reprehenderit quasi aspernatur"

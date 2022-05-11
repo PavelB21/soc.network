@@ -1,4 +1,5 @@
 import '../Style/ProfileStyle.css';
+
 const Profile = () => {
     return (
         <div className="container">
