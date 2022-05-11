@@ -1,0 +1,109 @@
+.page_block {
+    background: white;
+    border-radius: 4px;
+    box-shadow: #1a202c;
+    margin: 15px 0 0;
+}
+.post {
+    width: 50%;
+    margin:10px auto 5px;
+    border-radius: 15px;
+
+}
+.PostHeader--inPost {
+    padding-top: 16px;
+    -ms-flex-align: start;
+    align-items: start;
+}
+.PostHeader {
+    display: flex;
+    flex-direction: row;
+}
+.PostHeader--legacy.PostHeader--inPost {
+    padding: 15px 20px 0;
+}
+.PostHeaderInfo--inHeader .PostHeaderInfo--legacy {
+    white-space: initial;
+}
+.PostHeaderInfo--legacy {
+    padding-top: 8px;
+}
+.PostHeaderInfo--inHeader {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+.PostHeaderInfo {
+    display: flex;
+    flex-direction: column;
+}
+h5.post_author{
+    margin: 0;
+
+    font-weight: 400;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+.post_author {
+    padding-right: 500px;
+    color: #0e0e0e;
+    line-height: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+h5 {
+    display: block;
+    margin-block-start: 1.67em;
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-decoration: none;
+}
+.wall_text {
+    padding: 8px 20px 20px;
+    text-overflow: ellipsis;
+    position: relative;
+    z-index: 2;
+}
+.replies_wrap{
+    border-radius: 0 0 4px 4px;
+}
+.replies .replies_list{
+    padding-top: 10px;
+}
+.replies_list{
+    padding: 0;
+    border-top: 1px solid #dce1e6;
+}
+.reply {
+    background-color: transparent;
+    padding: 0 20px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    margin-bottom: -1px;
+    line-height: 14px;
+    transition: border-color .2s ease;
+}
+.clear {
+    float: none;
+    clear: both;
+}
+.reply_content{
+    margin-left: 0;
+    word-wrap: break-word;
+    min-height: 34px;
+}
+.reply_author {
+    font-size: 12.5px;
+    line-height: 1.36;
+    color: #939393;
+    min-height: 1.36em;
+    word-wrap: break-word;
+}
+.reply_text {
+    padding: 1px 0 0;
+    word-wrap: break-word;
+    font-size: 12px;
+    color: #818c99;
+    line-height:1.36;
+    min-height:1.36em
+}
+.wall_reply_text{word-wrap:break-word;overflow:hidden;line-height:1.36}

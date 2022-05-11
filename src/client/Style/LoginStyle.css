@@ -1,0 +1,72 @@
+*::-webkit-input-placeholder {
+    color: #ccc;
+}
+
+#range4 *:-moz-placeholder {
+    color: #ccc;
+}
+
+#range4 *::-moz-placeholder {
+    color: #ccc;
+}
+
+#range4 *:-ms-input-placeholder {
+    color: #ccc;
+}
+.login-wr{
+    position: center;
+    margin: 0 auto;
+    background: rgb(0, 119, 255);
+    max-width: 270px;
+    box-shadow: 3px 3px 10px #333;
+    padding: 0 15px 0 15px;
+}
+.form{
+    padding-top: 20px;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.6em;
+    margin: 0;
+    padding: 0;
+    color: #eee;
+}
+
+input[type="email"],
+input[type="password"],
+button{
+    margin-bottom: 25px;
+    height: 40px;
+    outline: 0;
+}
+input[type="email"],
+input[type="password"]{
+    width: calc(80 - 50px);
+    border: none;
+    border-bottom: 1px solid #666;
+    padding: 0 0 0 50px;
+    font-size: 14px;
+    color: #eeeeee;
+}
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-bottom: 1px solid #ccc;
+}
+input[type="email"]{
+    background: url("../Login/img/user2.png") no-repeat left 10px center;
+}
+input[type="password"]{
+    background: url("../Login/img/pencil2.png") no-repeat left 10px center;
+}
+button {
+    width: 80%;
+    background: rgb(0, 119, 255);
+    border:none;
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+    cursor: pointer;
+    transition: box-shadow .4s ease;
+}

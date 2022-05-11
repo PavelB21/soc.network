@@ -1,0 +1,32 @@
+.modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-content{
+    width: 500px;
+    background-color: white;
+}
+.close {
+    color: #101010;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+}
+.modal-body{
+    padding: 10px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #ee;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

@@ -1,10 +1,10 @@
 import React from "react";
 import './App.css';
 import  {BrowserRouter, Routes, Route} from "react-router-dom";
-import Profile from "./Pages/Profile";
-import Feed from "./Pages/Feed";
-import Sidebar from "./components/Sidebar";
-import LoginForm from "./Login/LoginForm";
+import Profile from "./client/Pages/Profile";
+import Feed from "./client/Pages/Feed";
+import Sidebar from "./client/components/Sidebar";
+import LoginForm from "./client/Login/LoginForm";
 class App extends React.Component {
   state = {
     isLoggedIn: false,
@@ -29,3 +29,4 @@ class App extends React.Component {
   }
 }
 export default App;
+

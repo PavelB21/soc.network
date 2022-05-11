@@ -1,0 +1,28 @@
+.top-menu {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: rgb(0, 119, 255);
+    padding: 20px 30px;
+    font-family: 'Roboto', sans-serif;
+    flex: 1;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 170px;
+    background: rgb(0, 119, 255);
+}
+li a {
+    display: block;
+    color: #ffffff;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+/* Изменение цвета ссылки при наведении курсора */
+li a:hover {
+    background-color: #555;
+    color: white;
+}
