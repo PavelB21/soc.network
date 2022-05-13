@@ -22,7 +22,7 @@ class Comment extends React.Component{
                 {comments.map(comment => {
                     return(
                         <div className='replies' key={comment.id}>
-                            <div className='replies_wrap' >newComment
+                            <div className='replies_wrap' >
                                 <div className="replies_list _replies_list">
                                     <div className="reply reply_dived clear  reply_replieable _post">
                                         <div className='reply_wrap _reply_content _post_content clear_fix'>

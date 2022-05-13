@@ -3,14 +3,19 @@ import '../Style/PostStyle.css';
 import {useState} from 'react';
 import Modal from '../Modal/modal';
 import Comment from "./Comments";
-
+const url = 'http://localhost:3001/comments';
 function Post(props) {
     const [show, setShow] = useState(false)
-
+    fetch(url)
+        .then(response =>response.json())
+        .then((data) =>{
+            const result = data.filter(element => element.postId === this.props.postID)
+            console.log("fff", result);
+        })
     return (
         <div>
             <div className="feed_row">
-                <div className="_post post page_block all own post--withPostBottomAction  post--with-likes closed_comments deep_active" key={props.post.postId}>
+                <div className="_post post page_block all own post--withPostBottomAction  post--with-likes closed_comments deep_active" key={props.post.id}>
                     <div className='_post_content'>
                         <div className='PostHeader PostHeader--legacy PostHeader--inPost js-PostHeader'>
                             <div className='PostHeaderInfo PostHeaderInfo--inHeader PostHeaderInfo--legacy'>
@@ -35,7 +40,7 @@ function Post(props) {
                                         </div>
                                     </div>
                                 </div>
-                                <Comment/>
+                                <Comment postID = {props.post.id}/>
                                 <div className='reply_box_wrap'>
                                     <div className='reply_fakebox_container'>
                                         <div className='reply_fakebox'>
