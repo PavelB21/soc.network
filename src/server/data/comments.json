@@ -17,5 +17,11 @@
     "id": 3,
     "author": "Pavel",
     "text": "quia molestiae reprehenderit quasi aspernatur"
+  },
+  {
+    "postId": 3,
+    "id": 4,
+    "author": "Tom",
+    "text": "good morning"
   }
 ]

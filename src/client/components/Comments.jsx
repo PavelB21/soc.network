@@ -2,14 +2,14 @@ import React from 'react';
 import '../Style/PostStyle.css';
 const url = 'http://localhost:3001/comments';
 
-console.log('post');
 class Comment extends React.Component{
     state = {
         comments: [],
     };
     componentDidMount = async () => {
         const result = await fetch(url);
-        const comments = await result.json();
+        let comments = await result.json();
+        comments = comments.filter(element => element.postId === this.props.postID);
         this.setState({
             comments: comments,
         });

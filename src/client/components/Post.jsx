@@ -3,15 +3,11 @@ import '../Style/PostStyle.css';
 import {useState} from 'react';
 import Modal from '../Modal/modal';
 import Comment from "./Comments";
-const url = 'http://localhost:3001/comments';
+import Like from "./like";
+
 function Post(props) {
     const [show, setShow] = useState(false)
-    fetch(url)
-        .then(response =>response.json())
-        .then((data) =>{
-            const result = data.filter(element => element.postId === this.props.postID)
-            console.log("fff", result);
-        })
+
     return (
         <div>
             <div className="feed_row">
@@ -33,13 +29,7 @@ function Post(props) {
                                         </div>
                                     </div>
                                 </div>
-                                <div className='like_wrap _like_wall68491943_1490 '>
-                                    <div className='like_cont PostBottomActionLikeBtns PostBottomActionLikeBtns--withBgButtons'>
-                                        <div className='like_btns'>
-
-                                        </div>
-                                    </div>
-                                </div>
+                                <Like/>
                                 <Comment postID = {props.post.id}/>
                                 <div className='reply_box_wrap'>
                                     <div className='reply_fakebox_container'>

@@ -1,0 +1,26 @@
+textarea {
+    width:40%;
+    resize: vertical;
+    padding:5px;
+    border-radius:15px;
+    border:0;
+    box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+
+}
+input[type="text"]{
+    width: 40%;
+    height: 30px;
+    box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.post {
+    width: 60%;
+    margin:10px auto 5px;
+    border-radius: 15px;
+
+}

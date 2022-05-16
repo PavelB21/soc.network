@@ -37,7 +37,7 @@ h2{
 input[type="email"],
 input[type="password"],
 button{
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     height: 40px;
     outline: 0;
 }
